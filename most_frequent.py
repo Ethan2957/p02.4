@@ -30,5 +30,15 @@ def run_tests():
 
 
 def mode(nums, a, b):
+    aw = nums.count(a)
+    bw = nums.count(b)
+    if aw  == 0 and bw == 0:
+        print('Neither')
+    elif aw == bw:
+        print('Tie')
+    elif aw > bw:
+        print(a)
+    else:
+        print(b)
 
 

@@ -25,5 +25,9 @@ def run_tests():
 
 
 def rotate(nums):
-
-
+    if len(nums) <= 1:
+        print(nums)
+    else:
+        a = nums.pop(0)
+        nums.append(a)
+        print(nums)
